@@ -9,7 +9,7 @@ app.use(cors());
 
 app.post("/api/loot", (req, res) => {
   console.log(req.body);
-  res.send("req.body.lootString: " + req.body.lootString);
+  res.send("Loot String: " + req.body.lootString);
 });
 
 app.listen(process.env.PORT || 3001, (req, res) => {
