@@ -16,11 +16,11 @@ app.post("/api/loot", (req, res) => {
   // console.log(req.body);
 
   const partyAnalyzerParserService = new PartyAnalyzerParserService(
-    req.body.lootString
+    req.body.submitedPtAnalyzer
   );
   console.log(partyAnalyzerParserService.ptAnalyzerExport());
 
-  res.send("Loot String: " + req.body.lootString);
+  res.send("submitedPtAnalyzer: " + req.body.submitedPtAnalyzer);
 });
 
 app.listen(process.env.PORT || 3001, (req, res) => {
