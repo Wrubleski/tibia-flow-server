@@ -4,7 +4,7 @@ class HeaderParserService {
     this.header = ptAnalyzer.replace(/\t/g, "").split("\n").slice(0, 6);
   }
 
-  headerExtractor() {
+  parse() {
     const headerObj = {
       sessionData: extractors.sessionDataExtractor(this.header[0]),
       session: extractors.sessionTimeExtractor(this.header[1]),

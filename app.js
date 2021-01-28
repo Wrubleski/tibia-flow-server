@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const _ = require("lodash");
-const PartyAnalyzerParserService = require("./src/services/PartyAnalyzerParserService");
+const PartyAnalyzerParserService = require("./src/infrastructure/parsers/PartyAnalyzerParserService");
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -13,7 +13,7 @@ app.post("/api/loot", (req, res) => {
   const partyAnalyzerParserService = new PartyAnalyzerParserService(
     req.body.submitedPtAnalyzer
   );
-  console.log(partyAnalyzerParserService.ptAnalyzerExport());
+  console.log(partyAnalyzerParserService.parse());
 
   res.send("submitedPtAnalyzer: " + req.body.submitedPtAnalyzer);
 });

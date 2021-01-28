@@ -5,12 +5,12 @@ class PartyAnalyzerParserService {
     this.ptAnalyzer = incomingPtAnalyzer;
   }
 
-  ptAnalyzerExport() {
+  parse() {
     const headerParserService = new HeaderParserService(this.ptAnalyzer);
     const playersParserService = new PlayersParserService(this.ptAnalyzer);
 
-    var analyzer = headerParserService.headerExtractor();
-    analyzer.players = playersParserService.playersExtractor();
+    var analyzer = headerParserService.parse();
+    analyzer.players = playersParserService.parse();
 
     return analyzer;
   }
