@@ -9,10 +9,10 @@ class PartyAnalyzerParserService {
     const headerParserService = new HeaderParserService(this.ptAnalyzer);
     const playersParserService = new PlayersParserService(this.ptAnalyzer);
 
-    var analyzer = headerParserService.parse();
-    analyzer.players = playersParserService.parse();
+    let parsedPtAnalyzer = headerParserService.parse();
+    parsedPtAnalyzer.players = playersParserService.parse();
 
-    return analyzer;
+    return parsedPtAnalyzer;
   }
 }
 
