@@ -5,8 +5,8 @@
 class LootCalculatorService {
   constructor(analyzerData) {
     this.analyzerData = analyzerData;
-    this.totalLoot = this.analyzerData.Loot;
-    this.totalWast = this.analyzerData.Supplies;
+    this.totalLoot = this.analyzerData.loot;
+    this.totalWast = this.analyzerData.supplies;
 
     this.playerProfit =
       (this.totalLoot - this.totalWast) / this.analyzerData.players.length;
@@ -25,8 +25,8 @@ class LootCalculatorService {
     return this.analyzerData.players
       .map((player) => {
         return {
-          name: player.player,
-          balance: player.Supplies + this.playerProfit - player.Loot,
+          name: player.name,
+          balance: player.supplies + this.playerProfit - player.loot,
           payTo: [],
         };
       })
