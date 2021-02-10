@@ -1,6 +1,6 @@
 const LootCalculatorService = require("../../application/services/LootCalculatorService");
 
-const PartyAnalyzerParserService = require("../../infrastructure/parsers/PartyAnalyzerParserService");
+const PartyAnalyzerParserService = require("../../application/services/parsers/PartyAnalyzerParserService");
 
 exports.loot_root_post = (req, res, next) => {
   try {
@@ -14,7 +14,7 @@ exports.loot_root_post = (req, res, next) => {
     );
     const lootPaymentInfo = lootCalculatorService.getPaymentData();
     const playerProfit = lootCalculatorService.getPlayerProfit();
-    res.send({ paymentInfo: lootPaymentInfo, profit: playerProfit });
+    res.send({ paymentInfo: lootPaymentInfo, playerProfit: playerProfit });
   } catch (err) {
     next(err);
   }

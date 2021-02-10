@@ -1,5 +1,5 @@
-const extractors = require("../../../src/infrastructure/parsers/extractors");
-const extractedSessionDataLineDummy = require("./dummies/extractedSessionDataLineDummy");
+const extractors = require("../../../src/application/services/parsers/extractors");
+const extractedSessionDataLineDummy = require("../dummies/parserServiceDummies/extractedSessionDataLineDummy");
 const assert = require("assert").strict;
 describe("extractros", function () {
   describe("numberExtractor", function () {
