@@ -1,0 +1,30 @@
+Session data: From 2021-01-22, 14:01:29 to 2021-01-22, 17:51:20
+Session: 03:49h
+Loot Type: Leader
+Loot: 3,979,318
+Supplies: 2,757,736
+Balance: 1,221,582
+Dona Constancia
+	Loot: 74,248
+	Supplies: 671,731
+	Balance: -597,483
+	Damage: 5,430,735
+	Healing: 165,960
+Fle Xaa
+	Loot: 353,668
+	Supplies: 937,845
+	Balance: -584,177
+	Damage: 4,249,215
+	Healing: 1,437,582
+Kirrila
+	Loot: 137
+	Supplies: 792,907
+	Balance: -792,770
+	Damage: 4,642,205
+	Healing: 2,334,332
+Tank Lord (Leader)
+	Loot: 3,551,265
+	Supplies: 355,253
+	Balance: 3,196,012
+	Damage: 3,028,752
+	Healing: 264,874

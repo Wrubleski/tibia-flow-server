@@ -1,13 +1,12 @@
 "use strict";
-
 const util = require("util");
 require("assert");
 const chai = require("chai");
-const LootCalculatorService = require("../../application/services/LootCalculatorService");
+const LootCalculatorService = require("../../src/application/services/LootCalculatorService");
 const {
   analyserOne,
   analyserTwo,
-} = require("../dummies/parserdAnalyserData/analysers");
+} = require("../services/dummies/lootCalculatorServiceDummies/analysers");
 
 const { expect } = chai;
 
